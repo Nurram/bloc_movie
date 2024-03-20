@@ -46,18 +46,26 @@ class HomeScreen extends StatelessWidget {
                   },
                 );
               } else if (state is MoviesLoaded) {
-                return GridView.builder(
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      mainAxisSpacing: 8,
-                      crossAxisSpacing: 8,
-                      childAspectRatio: 9 / 16),
-                  itemCount: state.response.results.length,
-                  itemBuilder: (context, index) {
-                    return MovieList(
-                      movie: state.response.results[index],
-                    );
+                return RefreshIndicator(
+                  onRefresh: () {
+                    return Future.delayed(Duration.zero, () {
+                      context.read<MoviesBloc>().add(LoadMoviesEvent());
+                    });
                   },
+                  child: GridView.builder(
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            mainAxisSpacing: 8,
+                            crossAxisSpacing: 8,
+                            childAspectRatio: 9 / 16),
+                    itemCount: state.response.results.length,
+                    itemBuilder: (context, index) {
+                      return MovieList(
+                        movie: state.response.results[index],
+                      );
+                    },
+                  ),
                 );
               } else {
                 return const SizedBox();
