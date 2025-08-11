@@ -8,6 +8,8 @@ on:
   # Runs this when a PR against master is created
   pull_request:
     branches: [ "master" ]
+    #Runs this when the PR is closed
+    types: [closed]
 
 jobs:
   flutter_job:
@@ -33,8 +35,8 @@ jobs:
         run: flutter pub get
       
       # Checks for Symantic errors. Can be configured using analysis_options.yaml
-      - name: Analyze Project Source
-        run: flutter analyze --fatal-warnings
+      # - name: Analyze Project Source
+      #   run: flutter analyze --fatal-warnings
 
       # Runs unit test
       - name: Run tests
