@@ -31,3 +31,30 @@ jobs:
       
       - name: Install dependencies
         run: flutter pub get
+
+      # Verifies if the dart code is formatted well
+      - name: Verify Formatting
+        run: dart format --output=none --set-exit-if-changed
+        # --set-exit-if-changed stops execution if the any code is not well formatted
+        # --output=none prints files which needs to be formatted
+      
+      # Checks for Symantic errors. Can be configured using analysis_options.yaml
+      - name: Analyze Project Source
+        run: flutter analyze --fatal-warnings
+
+      # Runs unit test
+      - name: Run tests
+        run: flutter test
+
+      # Create android apk
+      - name: Build apk
+        run: flutter build apk
+
+      #Upload apk to firebase distribution
+      - name: Upload APK to Firebase distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1.7.0
+        with:
+          appId: ${{ secrets.FIREBASE_APP_ID_ANDROID }}
+          serviceCredentialsFileContent: ${{ secrets.FIREBASE_TOKEN }}
+          groups: testers
+          file: build/app/outputs/flutter-apk/app-release.apk

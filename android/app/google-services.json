@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "67835346400",
+    "firebase_url": "https://nurram-projects-default-rtdb.firebaseio.com",
+    "project_id": "nurram-projects",
+    "storage_bucket": "nurram-projects.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67835346400:android:8556f0b5e43bd140a5ff85",
+        "android_client_info": {
+          "package_name": "com.example.movie_bloc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67835346400-av7foh6c2v5umkcsdeik128o4arkoee8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJq2FNWwKsVG2p9XQL0pNsSDf4covbzEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67835346400-av7foh6c2v5umkcsdeik128o4arkoee8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "67835346400-tn1iqrk6uvqb0vi9bjgsr9vm5ftvqn4f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterChat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67835346400:android:19690afff298d5c1a5ff85",
+        "android_client_info": {
+          "package_name": "com.nurram.project.imagetextrecognition"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67835346400-av7foh6c2v5umkcsdeik128o4arkoee8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJq2FNWwKsVG2p9XQL0pNsSDf4covbzEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67835346400-av7foh6c2v5umkcsdeik128o4arkoee8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "67835346400-tn1iqrk6uvqb0vi9bjgsr9vm5ftvqn4f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterChat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67835346400:android:6df39a5fa86fb13da5ff85",
+        "android_client_info": {
+          "package_name": "com.nurram.project.pencatatkeuangan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67835346400-0jsfnt55cli6962utjrabaiddohn055b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nurram.project.pencatatkeuangan",
+            "certificate_hash": "7fa6db1817eccd4f905f92e4fb474aa72fe2cd35"
+          }
+        },
+        {
+          "client_id": "67835346400-tlegquvks3vu52frqbtdffan7rud8e7t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nurram.project.pencatatkeuangan",
+            "certificate_hash": "3c18d09e2eae0405993f63aea10abd4962c51bd5"
+          }
+        },
+        {
+          "client_id": "67835346400-av7foh6c2v5umkcsdeik128o4arkoee8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJq2FNWwKsVG2p9XQL0pNsSDf4covbzEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67835346400-av7foh6c2v5umkcsdeik128o4arkoee8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "67835346400-tn1iqrk6uvqb0vi9bjgsr9vm5ftvqn4f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterChat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
